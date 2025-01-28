@@ -2,6 +2,8 @@
 //Author: Sarah | â™¡Sarah~#0004
 //Version: 0.1 Alpha
 
+import "./Acrylic.theme.css"
+
 async function acrylicMagic() {
   window.Effect.apply('unified', { color: '#6001' });
   //window.Effect.apply('unified', { color: '#fff00' });
@@ -205,12 +207,12 @@ window.addEventListener('load', async () => {
   DataStore.set('AcrylStatus', 'false');
   await backgroundCheck();
   // Wait for manager layer
-  document
-    .getElementsByTagName('body')[0]
-    .insertAdjacentHTML(
-      'afterbegin',
-      '<link rel="stylesheet" href="https://egirl.ing/league-css/Acrylical/Acrylic.theme.min.css" />'
-    );
+  // document
+  //   .getElementsByTagName('body')[0]
+  //   .insertAdjacentHTML(
+  //     'afterbegin',
+  //     '<link rel="stylesheet" href="https://egirl.ing/league-css/Acrylical/Acrylic.theme.min.css" />'
+  //   );
   if (checkIfPopulated()) {
     fam = DataStore.get('fontfam');
     let val = DataStore.get('font');
